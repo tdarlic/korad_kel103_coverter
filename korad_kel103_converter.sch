@@ -36,17 +36,6 @@ F 3 "~" H 5125 2875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Female J2
-U 1 1 617A2BC0
-P 4300 2500
-F 0 "J2" H 4192 2275 50  0000 C CNN
-F 1 "Conn_01x01_Female" H 4192 2366 50  0000 C CNN
-F 2 "Local:electronic_load_conn" H 4300 2500 50  0001 C CNN
-F 3 "~" H 4300 2500 50  0001 C CNN
-	1    4300 2500
-	-1   0    0    1   
-$EndComp
-$Comp
 L Connector:Conn_01x01_Female J1
 U 1 1 617A325B
 P 4275 2875
@@ -57,8 +46,51 @@ F 3 "~" H 4275 2875 50  0001 C CNN
 	1    4275 2875
 	-1   0    0    1   
 $EndComp
+$Comp
+L Connector:Conn_01x01_Female J2
+U 1 1 617A2BC0
+P 4300 2500
+F 0 "J2" H 4192 2275 50  0000 C CNN
+F 1 "Conn_01x01_Female" H 4192 2366 50  0000 C CNN
+F 2 "Local:electronic_load_conn" H 4300 2500 50  0001 C CNN
+F 3 "~" H 4300 2500 50  0001 C CNN
+	1    4300 2500
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	4500 2500 4950 2500
+	4475 2875 4850 2875
 Wire Wire Line
-	4475 2875 4925 2875
+	4500 2500 4850 2500
+$Comp
+L Connector:Conn_01x01_Female J5
+U 1 1 617A8E50
+P 4850 2050
+F 0 "J5" V 4788 1962 50  0000 R CNN
+F 1 "Conn_01x01_Female" V 4697 1962 50  0000 R CNN
+F 2 "Local:SMD_pad_connector" H 4850 2050 50  0001 C CNN
+F 3 "~" H 4850 2050 50  0001 C CNN
+	1    4850 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4850 2250 4850 2500
+Connection ~ 4850 2500
+Wire Wire Line
+	4850 2500 4950 2500
+$Comp
+L Connector:Conn_01x01_Female J6
+U 1 1 617A9DA1
+P 4850 3325
+F 0 "J6" V 4696 3373 50  0000 L CNN
+F 1 "Conn_01x01_Female" V 4787 3373 50  0000 L CNN
+F 2 "Local:SMD_pad_connector" H 4850 3325 50  0001 C CNN
+F 3 "~" H 4850 3325 50  0001 C CNN
+	1    4850 3325
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 3125 4850 2875
+Connection ~ 4850 2875
+Wire Wire Line
+	4850 2875 4925 2875
 $EndSCHEMATC
